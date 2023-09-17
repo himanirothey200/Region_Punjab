@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Region Punjab Restaurant </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Swiper.js-->
+  <!-- <link rel="stylesheet" href="vendor/swiper/swiper-bundle.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- gLightbox-->
+  <link rel="stylesheet" href="vendor/glightbox/css/glightbox.css">
+  <!-- air datepicker-->
+  <link rel="stylesheet" href="vendor/air-datepicker/air-datepicker.css">
+  <!-- Leaflet-->
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <!-- google font - dancing script for headings | pt sans for copy-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|PT+Serif:400,400i,700">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <link rel="stylesheet" href="./vendor/swiper/swiper.min.css">
+  <style>
+    .true:hover {
+
+      cursor: pointer;
+    }
+
+    /* Swiper CSS styles */
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Video Overlay styles */
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .video-overlay h6 {
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    .video-overlay h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* Swiper navigation arrows and pagination styles (optional) */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .swiper-pagination {
+      bottom: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: #fff;
+      opacity: 0.7;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+  </style>
+  <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Hide caption after 5 seconds
+    setTimeout(function() {
+        var caption = document.querySelector(".caption");
+        if (caption) {
+            caption.style.display = "none";
+        }
+    }, 5000);
+    
+    // Play the video
+    var video = document.getElementById("bg-video1");
+    if (video) {
+        video.play();
+    }
+});
+
+
+
+
+    
+    
+  </script>
+</head>
+<!-- <script src="./vendor/swiper/swiper-bundle.js"></script> -->
+
+<body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0"
+  style="background-color: #273832">
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-lg-0" id="navbar">
+    <div class="container"><a class="navbar-brand" href="index.html"> <img src="img/main_logo.jpg" alt="Region punjab"
+          width="400px"></a>
+      <button class="navbar-toggler p-0 shadow-0 border-0 text-black" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="fw-bold mb-0 text-uppercase">Menu</span><span
+          class="navbar-toggler-icon ms-2"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#dishes">Dishes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact </a></li>
+          <li class="nav-item"><a class="nav-link" href="#Careers">Careers </a></li>
+
+          <li class="nav-item ms-lg-3">
+            <button class="btn btn-primary d-none d-lg-inline-block" type="button" data-bs-toggle="modal"
+              data-bs-target="#reservationModal">Make a Reservation </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar-->
+  <!-- Reservation Modal-->
+  <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content position-relative">
+        <div class="bg-primary position-absolute top-0 start-0 z-index-top">
+          <button class="btn-close btn-close-white p-3 opacity-10" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <header class="mb-5 text-center">
+            <h3 class="handwriting-text">Make a reservation</h3>
+            <h5 class="text-uppercase text-gray-500 fw-normal">Book your table now</h5>
+          </header>
+          <!-- <form class="p-lg-5"> -->
+          <form action="https://formsubmit.co/ff82cf06e721c9a88a53d4f828d5c060" method="POST">
+            <div class="row gy-3">
+              <div class="col-lg-6">
+                <label class="form-label" for="modalResName"> Name</label>
+                <input class="form-control shadow-0 px-0 border-0 " id="modalResName" type="text" name="res_name"
+                  required="">
+              </div>
+              <div class="col-lg-6">
+                <label class="form-label" for="modalResEmail"> Email</label>
+                <input class="form-control shadow-0 px-0 border-0 " id="modalResEmail" type="email" name="res_email"
+                  required="">
+              </div>
+              <div class="col-lg-6">
+                <label class="form-label" for="modalResNumber">Mobile Number</label>
+                <input class="form-control shadow-0 px-0 border-0" id="modalResNumber" type="tel" name="mobile_number"
+                       pattern="[0-9]{10}" placeholder="Enter your mobile number" required="">
+                <small class="form-text text-muted">Please enter a 10-digit mobile number.</small>
+            </div>
+            
+              <div class="col-lg-6">
+                <label class="form-label" for="modalResPeople"> People</label>
+                <input class="form-control shadow-0 px-0 border-0" id="modalResPeople" type="number" name="res_people"
+                  required="">
+              </div>
+              <div class="col-lg-12">
+                <label class="form-label" for="modalResDate"> Date & Time</label>
+                <input class="form-control shadow-0 px-0 border-0 " id="modalResDate" type="text" name="res_date"
+                  required="">
+              </div>
+              <div class="col-lg-12">
+                <label class="form-label" for="modalRequest"> Special request</label>
+                <textarea class="form-control shadow-0 px-0 border-0 border-bottom" id="modalRequest" rows="4"
+                  name="res_request" required=""></textarea>
+              </div>
+              <div class="col-lg-12 text-center">
+                <button class="btn btn-primary" type="submit">Book now</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-banner" id="top">
+    <div class="swiper-container$">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide overflow-hidden">
+          <video autoplay muted loop id="bg-video1">
+            //style="filter: blur(2px)brightness(0.5)"
+            <source src="./videos/main.mp4" type="video/mp4" />
+          </video>
+          <!-- <div class="video-overlay header-text">
+            <div class="caption">
+              <h6>Welcome to Region Punjab Hotel - Where the Spirit of Punjab Awaits You!</h6>
+              <h2>A Culinary Heaven for<em > Punjabi Food Lovers</em></h2>
+              <div class="main-button scroll-to-section">
+                <a href="#features"></a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="p-0" id="detail" style="z-index: 10;">
+    <div class="row">
+
+      <div class="col-lg-6 p-5 text-white bg-black">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+          <div class="text-center me-lg-2"><span>Call Us Now For</span>
+            <h5 class="text-primary text-uppercase mt-2">Home Delivery</h5>
+          </div>
+          <div class="ms-lg-3"><a class="text-reset h3" href="tel:9175313535">917 531 3535 </a></div>
+        </div>
+      </div>
+      <div class="col-lg-6 p-5 bg-primary" style="height: auto; border-radius: 0px;margin-left: 0px;margin-bottom: 0px;">
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-start new">
+          <div class="text-center"><span class="text-black">Check Our Clients'</span>
+            <h5 class=" text-uppercase mt-2" style="color:#273832">Rating &amp; reviews</h5>
+          </div>
+          <div class="ms-3"><a class="link-rounded bg-white" href="#!"> <i class="fas fa-angle-right"></i></a></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- About Section-->
+  <section class="bg-light" id="about">
+    <div class="container text-center" style="margin: auto;">
+      <header class="mb-5">
+        <h2 class="handwriting-text">About Restaurant</h2>
+        <h5 class="text-uppercase text-gray-500 fw-normal">Check our story</h5>
+      </header>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <p class="lead text-muted mb-0">Welcome to our Region Punjab, the most authentic Punjabi restaurant in town! We take pride in serving you the most delectable dishes from the vibrant state of Punjab, India. Our menu is carefully curated to bring you a tantalizing culinary experience that will transport your taste buds to the land of bhangra and warm hospitality.
+            At Region Punjab, we offer a variety of Punjabi specialties that will truly satisfy your cravings. From our mouthwatering tandoori dishes prepared in the traditional clay oven to our rich and creamy curries, every bite is a burst of aromatic spices and flavors. Whether you are a vegetarian or a meat lover, our menu has something to suit every palate. Sample our succulent butter chicken, tender mutton kebabs, or indulge in our famous Punjabi thali that features a medley of dishes showcasing the diverse flavors of Punjab.            
+            What sets Region Punjab apart is our dedication to using only the freshest and finest ingredients. We source our produce locally whether it's succulent vegetables, aromatic spices, or tender meat, Region Punjab takes immense pride in its farm-to-table approach. The emphasis on using organic and natural ingredients ensures that the food is free from harmful chemicals and artificial food colors. The vibrant colors and tantalizing 
+            flavors of Punjabi cuisine come from the essence of freshly prepared spices and herbs. With traditional cooking methods and recipes passed down through generations, each dish is prepared with love and care. So, when you savor the delectable flavors of Punjab, you can be assured of a culinary experience that is both nourishing and wholesome experience.</p>
+        </div>
+      </div>
+    </div><img class="position-absolute top-100 start-100 translate-middle d-none d-lg-block" src="img/dish-d.png"
+      alt="..." width="300">
+  </section>
+  <!-- End About Section-->
+  <!-- Services Section-->
+  <!-- <section id="services">
+      <div class="container text-center">
+        <header class="mb-5">
+          <h2 class="handwriting-text">We provide the following</h2>
+          <h5 class="text-uppercase text-gray-500 fw-normal">Our Specialities</h5>
+        </header>
+        <div class="row gy-4">
+          
+          <div class="hover-icon-primary col-md-4">
+            <div class="icon mb-4 mx-auto"><i class="far fa-heart"></i></div>
+            <h5 class="text-uppercase">Clean Environment</h5>
+            <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+          <div class="hover-icon-primary col-md-4">
+            <div class="icon mb-4 mx-auto"><i class="fas fa-user-tie"></i></div>
+            <h5 class="text-uppercase">Lovely &amp; expert chefs</h5>
+            <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+          <div class="hover-icon-primary col-md-4">
+            <div class="icon mb-4 mx-auto"><i class="fas fa-hamburger"></i></div>
+            <h5 class="text-uppercase">Fresh and tasty food</h5>
+            <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  <!-- End Services Section-->
+  <!-- App Section-->
+  <section class="p-0" id="app">
+    <div class="container" style="margin: auto;">
+      <div class="bg-primary text-white p-1">
+        <div class="p-5 text-center ">
+          <h5 class="h4 mb-4 text-uppercase fw-light">Our app is available now, we made it easire, Download it now.</h5>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a class="btn btn-light" href="#" title="Google Play">Google Play</a></li>
+            <li class="list-inline-item"><a class="btn btn-light" href="#" title="Appstore">App Store</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End App Section-->
+  <!-- Dishes Section-->
+  <section class="dishes" id="dishes">
+    <div class="container text-center" style="margin: auto;">
+      <header class="mb-5">
+        <h2 class="handwriting-text">Signature Dishes</h2>
+        <h5 class="text-uppercase text-gray-500"> Fresh and healthy food available</h5>
+      </header>
+      <!-- Set up your HTML-->
+      <div class="swiper dishes-slider-my">
+        <div class="swiper-wrapper">
+          <!-- item-->
+          <div class="swiper-slide h-auto mb-5 text-center">
+            <div class="position-relative d-inline-block px-lg-5"><img class="d-block mx-auto" src="img/aloo-nazakat-crisped.png"
+                alt="Fried Shrimp" height="180">
+              <div class="position-absolute top-0 end-0 px-5">
+                <div class="icon icon-sm bg-primary shadow-sm border border-primary mx-lg-5"><span> 280/-</span></div>
+              </div>
+            </div>
+            <h4 class="h5 text-uppercase">Amritsari Soya Chaap</h4>
+            <p class="text-muted text-sm">Medium Spicy Tangy Chaap Marinated With Yogurt, & Tandoori Red Masala Cooked
+              In
+              Tandoor.</p>
+          </div>
+          <!-- item-->
+          <div class="swiper-slide h-auto mb-5 text-center">
+            <div class="position-relative d-inline-block px-lg-5"><img class="d-block mx-auto" src="img/Khumb Matar Masala.jpg"
+                alt="Fried Shrimp" height="150">
+              <div class="position-absolute top-0 end-0 px-5">
+                <div class="icon icon-sm bg-primary shadow-sm border border-primary mx-lg-5"><span>360/-</span></div>
+              </div>
+            </div>
+            <h4 class="h5 text-uppercase">Murg Kadai</h4>
+            <p class="text-muted text-sm">Dice Of Chicken Cooked In Thick Onion & Tomatoes Based Gravy Stir-Fried In
+              Kadhai Served With Ginger Julienne And Coriander.</p>
+          </div>
+          <!-- item-->
+          <div class="swiper-slide h-auto mb-5 text-center">
+            <div class="position-relative d-inline-block px-lg-5"><img class="d-block mx-auto" src="img/Paneer_Makhani-removebg-preview.png"
+                alt="Fried Shrimp" height="150">
+              <div class="position-absolute top-0 end-0 px-5">
+                <div class="icon icon-sm bg-primary shadow-sm border border-primary mx-lg-5"><span>370/-</span></div>
+              </div>
+            </div>
+            <h4 class="h5 text-uppercase">Paneer Lababdar</h4>
+            <p class="text-muted text-sm">Cottage Cheese Cooked In Tomato Gravy With Onion And Capsicum.</p>
+          </div>
+          <!-- item-->
+          <div class="swiper-slide h-auto mb-5 text-center">
+            <div class="position-relative d-inline-block px-lg-5"><img class="d-block mx-auto" src="img/dish-c.png"
+                alt="Fried Shrimp" height="142">
+              <div class="position-absolute top-0 end-0 px-5">
+                <div class="icon icon-sm bg-primary shadow-sm border border-primary mx-lg-5"><span>170/-</span></div>
+              </div>
+            </div>
+            <h4 class="h5 text-uppercase">Fried Shrimp</h4>
+            <p class="text-muted text-sm">Deep-fry shrimp in batches in the hot oil until cooked through, about 1
+              minute.
+              Use tongs to transfer shrimp to a paper towel-lined plate</p>
+          </div>
+          <!-- item-->
+          <div class="swiper-slide h-auto mb-5 text-center">
+            <div class="position-relative d-inline-block px-lg-5"><img class="d-block mx-auto" src="img/dish-b.png"
+                alt="Fried Shrimp" height="142">
+              <div class="position-absolute top-0 end-0 px-5">
+                <div class="icon icon-sm bg-primary shadow-sm border border-primary mx-lg-5"><span>270/-</span></div>
+              </div>
+            </div>
+            <h4 class="h5 text-uppercase">Fried Shrimp</h4>
+            <p class="text-muted text-sm">Deep-fry shrimp in batches in the hot oil until cooked through, about 1
+              minute.
+              Use tongs to transfer shrimp to a paper towel-lined plate</p>
+          </div>
+          <!-- item-->
+          <div class="swiper-slide h-auto mb-5 text-center">
+            <div class="position-relative d-inline-block px-lg-5"><img class="d-block mx-auto" src="img/dish-a.png"
+                alt="Fried Shrimp" height="142">
+              <div class="position-absolute top-0 end-0 px-5">
+                <div class="icon icon-sm bg-primary shadow-sm border border-primary mx-lg-5"><span>277/-</span></div>
+              </div>
+            </div>
+            <h4 class="h5 text-uppercase">Fried Shrimp</h4>
+            <p class="text-muted text-sm">Deep-fry shrimp in batches in the hot oil until cooked through, about 1
+              minute.
+              Use tongs to transfer shrimp to a paper towel-lined plate</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End Dishes Section-->
+  <!-- Offers Section-->
+  <!-- <section class="bg-light" id="offers">
+      <div class="container text-center">
+        <header class="mb-5">
+          <h2 class="handwriting-text">Special Offers</h2>
+          <h5 class="text-uppercase text-gray-500 fw-normal">Don't miss our offers</h5>
+        </header>
+        <div class="row gy-4 mt-5">
+          <div class="col-md-4">
+            <div class="card border-0">
+              <div class="card-body p-lg-5 position-relative">
+                <div class="px-3 position-absolute top-0 end-0 translate-middle">
+                  <div class="icon icon-md bg-primary border border-primary">
+                    <h6 class="text-white mb-0 lh-1 text-uppercase">40% <br> off</h6>
+                  </div>
+                </div><img class="img-fluid d-block mx-auto mb-3 mt-4" src="img/dish-d.png" alt="Dish Name" width="200">
+                <h5 class="text-uppercase">Dish Name </h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="text-primary lead price-formatted fw-bold text-sm">50000 </li>
+                  <li class="text-muted lead price-formatted fw-bold text-sm text-line-through">30000 </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <div class="card-body p-lg-5 position-relative">
+                <div class="px-3 position-absolute top-0 end-0 translate-middle">
+                  <div class="icon icon-md bg-primary border border-primary">
+                    <h6 class="text-white mb-0 lh-1 text-uppercase">40% <br> off</h6>
+                  </div>
+                </div><img class="img-fluid d-block mx-auto mb-3 mt-4" src="img/dish-d.png" alt="Dish Name" width="200">
+                <h5 class="text-uppercase">Dish Name </h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="text-primary lead price-formatted fw-bold text-sm">50000 </li>
+                  <li class="text-muted lead price-formatted fw-bold text-sm text-line-through">30000 </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <div class="card-body p-lg-5 position-relative">
+                <div class="px-3 position-absolute top-0 end-0 translate-middle">
+                  <div class="icon icon-md bg-primary border border-primary">
+                    <h6 class="text-white mb-0 lh-1 text-uppercase">40% <br> off</h6>
+                  </div>
+                </div><img class="img-fluid d-block mx-auto mb-3 mt-4" src="img/dish-d.png" alt="Dish Name" width="200">
+                <h5 class="text-uppercase">Dish Name </h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="text-primary lead price-formatted fw-bold text-sm">50000 </li>
+                  <li class="text-muted lead price-formatted fw-bold text-sm text-line-through">30000 </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  <!-- End Offers Section-->
+  <!-- Menu Section-->
+  <section id="menu">
+    <div class="container" style="margin: auto;">
+      <header class="text-center mb-5 ">
+        <h2 class="handwriting-text">Our food menu</h2>
+        <h5 class="text-uppercase text-gray-500 fw-normal">Our most popular menu</h5>
+      </header>
+      <div class="bg-light p-1 mb-5">
+        <ul class="nav nav-pills justify-content-center  p-3" id="foodMenu" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase active" id="Starters-tab" data-bs-toggle="tab" data-bs-target="#Starters" type="button" role="tab" aria-controls="Starters" aria-selected="true">Starters</button>
+          </li>
+          
+             <li class="nav-item" role="presentation">
+                 <button class="nav-link text-uppercase" id="Tandoor-Veg-tab"  data-bs-toggle="tab" data-bs-target="#Tandoor-Veg" type="button" role="tab" aria-controls="Tandoor-Veg" aria-selected="false">Tandoor-Veg</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-uppercase" id="Paneer-tab"  data-bs-toggle="tab" data-bs-target="#Paneer" type="button" role="tab" aria-controls="Paneer" aria-selected="false">Paneer</button>
+            </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="TANDOOR-CHICKEN-tab" data-bs-toggle="tab" data-bs-target="#TANDOOR-CHICKEN" type="button" role="tab" aria-controls="TANDOOR-CHICKEN" aria-selected="false">TANDOOR CHICKEN</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="TANDOOR-SEA-tab" data-bs-toggle="tab" data-bs-target="#TANDOOR-SEA" type="button" role="tab" aria-controls="TANDOOR-SEA" aria-selected="false">TANDOOR-SEA FOOD</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="BREAD-tab" data-bs-toggle="tab" data-bs-target="#BREAD" type="button" role="tab" aria-controls="BREAD" aria-selected="false">BREADS</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="RICE-tab" data-bs-toggle="tab" data-bs-target="#RICE" type="button" role="tab" aria-controls="RICE" aria-selected="false">RICE</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="foodMenuContent">
+        <div class="tab-pane fade show active" id="Starters" role="tabpanel" aria-labelledby="Starters-tab">
+          <div class="row">
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary style=" color:green;">
+                <div class="d-flex justify-content-between px-4 ">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">aalo chat</h5>
+                    <p class="small mb-0 true">Mushroom/Veggie/Sources</p>
+                    <div class="true"><strong class="price-formatted true">160
+                      </strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Shahi_Paneer-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary ">
+                <div class="d-flex justify-content-between px-4  ">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">Tikki chaat</h5>
+                    <p class="small mb-0 true">Lemon / Garlic / Beans</p>
+                    <div class=" true"><strong class="price-formatted true">180</strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Palak Shorba.png" alt="Lemon and Garlic Green Beans" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom ">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">penut Masala</h5>
+                    <p class="small mb-0 text-gray-600">Lamb / Wine / Butter</p>
+                    <div class="true"><strong class="price-formatted true">160</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/menu Bhutte-ka-shorba-3-2-removebg-preview.png" alt="Lemon and Garlic Green Beans"
+                      class="rounded-circle" style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">Chana Masala</h5>
+                    <p class="small mb-0 text-gray-600">Pepper / Chicken / Honey</p>
+                    <div class="text-end py-1"><strong class="price-formatted text-primary">160</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu murg dhaniya shorba.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">dahi Bhalla</h5>
+                    <p class="small mb-0 text-gray-600">Oysters / Veggie / Ginger</p>
+                    <div class="text-end py-1"><strong class="price-formatted text-primary">180</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Palak Shorba.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">Chaat Papdi</h5>
+                    <p class="small mb-0 text-gray-600">Mushroom / Veggie / White Sources</p>
+                    <div class="text-end py-1"><strong class="price-formatted text-primary">180</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu murg dhaniya shorba.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+     
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Tandoor-Veg" role="tabpanel" aria-labelledby="Tandoor-Veg-tab">
+          <div class="row">
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary text-white ">
+                <div class="d-flex justify-content-between px-4 border border-white border-2">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">PANEER MAKHMALI TIKKA</h5>
+                    <p class="small mb-0 true">Cube Of Co􀆩age Cheese Marinated With Cream, Cheese And Cashew Paste Cooked In Tandoor.</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Achari tikka Plate.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">Ajwaini Paneer Tikka</h5>
+                    <p class="small mb-0 text-gray-600">Fresh Co􀆩age Cheese Marinated In yogurt, Red Chilly Paste, Spices Topped
+                      With Carom Seeds And Grilled</p>
+                    <div class="text-end"><strong class="price-formatted">330</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Ajwaini tikka.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">Pahadi Paneer Tikka</h5>
+                    <p class="small mb-0 text-gray-600">Cubes Of Co􀆩age Cheese Marinated In Mint Coriander Paste Finished In Tandoor</p>
+                    <div class="text-end"><strong class="price-formatted">330</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer_Makhani-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">Kali Mirch Paneer Tikka</h5>
+                    <p class="small mb-0 text-gray-600">Cubes Of Co􀆩age Cheese Marinated With Cashew Paste & Black Paper Cooked In Tandoor.</p>
+                    <div class="text-end"><strong class="price-formatted">330</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Tikka.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">Khumb Ki Seekh</h5>
+                    <p class="small mb-0 text-gray-600">Chopped Mushroom Mashed With Gram Flour, Garlic, SpicesThinly Wrapped Around A
+                      Skewer And Grilled , Usally In Tandoor</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Kalami_Kabab.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">ACHARI PANEER TIKKA</h5>
+                    <p class="small mb-0 text-gray-600">Cubes Of Co􀆩age Cheese Added With Tandoori Achari Masala.</p>
+                    <div class="text-end"><strong class="price-formatted">330</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/kumbh_ki_seekh.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">BHARWAN MUSHROOM</h5>
+                    <p class="small mb-0 text-gray-600">􀆩age Cheese Stuffed In Mushroom Roasted In Tandoor With Tandoori Red Masala</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/aloo-nazakat-crisped.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">ACHARI SOYA CHAAP</h5>
+                    <p class="small mb-0 text-gray-600">Soya Chaap Marinated With Tandoori Achari Masala and Finish In Tandoor</p>
+                    <div class="text-end"><strong class="price-formatted">320</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Achari tikka Plate.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">VEG SEEKH KEBAB</h5>
+                    <p class="small mb-0 text-gray-600">Mixture of Chopped Vegetable And Gram Powder Cooked in Tandoor</p>
+                    <div class="text-end"><strong class="price-formatted">260</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/amrotsari_soya_chaap1.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">DAHI KE KEBAB</h5>
+                    <p class="small mb-0 text-gray-600">Pan Fried Pa􀆫es Of Hung Curd Flavoured With Green Chillies And Fresh Coriander</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/amrotsari_soya_chaap1.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Paneer" role="tabpanel" aria-labelledby="Paneer-tab">
+          <div class="row">
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary text-white ">
+                <div class="d-flex justify-content-between px-4 border border-white border-2">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">SHAHI PANEERA</h5>
+                    <p class="small mb-0 true">Lentil curry Enriched with a Tempering Of Onion Tomato And Spices</p>
+                    <div class="text-end"><strong class="price-formatted">380</strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Achari tikka Plate.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">PANEER LABABDAR</h5>
+                    <p class="small mb-0 text-gray-600">Co􀆩age Cheese Cooked In Tomato Gravy with Onion And Capsicum.</p>
+                    <div class="text-end"><strong class="price-formatted">370</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Ajwaini tikka.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KADAI PANEER</h5>
+                    <p class="small mb-0 text-gray-600">Cottage Cheese Cooked In Thick Onion & Tomatoes Based Gravy Stir-Fried</p>
+                    <div class="text-end"><strong class="price-formatted">360</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer_Makhani-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MATAR PANEER</h5>
+                    <p class="small mb-0 text-gray-600">A Creamy And Rich North Indian Curry Prepared From Panner Cubes And Green Peas.</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Tikka.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">PALAK PANEER</h5>
+                    <p class="small mb-0 text-gray-600">Puree Of Tender Spinach Leaves, Cooked, with Cubes Of Home Made Co􀆩age Cheese, Enhance
+                      By Subtle Aroma Of Spices and Seasonings</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Kalami_Kabab.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">PANEER MAKHANI</h5>
+                    <p class="small mb-0 text-gray-600">Cottage Cheese Cubes Cooked In Creamy Tomato Gravy.</p>
+                    <div class="text-end"><strong class="price-formatted">380</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/kumbh_ki_seekh.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">PANEER MUMTAAZ(SPL)</h5>
+                    <p class="small mb-0 text-gray-600">Cottage Cheese Cooked With Fine Chopped Onion,
+                      Capsicum Cooked In Cashew Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">380</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/aloo-nazakat-crisped.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-1 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">PANEER SHIMLA (SIZZLER)</h5>
+                    <p class="small mb-0 text-gray-600">Cubes of Cottage Cheese, Capsicum,Onion Cooked In Tomato Based Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">380</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Achari tikka Plate.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="tab-pane fade" id="TANDOOR-CHICKEN" role="tabpanel" aria-labelledby="TANDOOR-CHICKEN-tab">
+          <div class="row">
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom px-4">
+                <div class="d-flex justify-content-between">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MURG BANJARA</h5>
+                    <p class="small mb-0 text-gray-600">Fresh Boneless Chicken Marinated With Tandoori Banjara Masala</p>
+                    <div class="text-end"><strong class="price-formatted">360</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Achari-Soya-Chaap1.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">BHATI DA MURG</h5>
+                    <p class="small mb-0 text-gray-600">Young Chicken Marinated With Indian Spices and Yogurt Cooked In Tandoor Served With Masala Onion</p>
+                    <div class="text-end"><strong class="price-formatted">280 / 500/-</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Hara_Bhara_Kabab__Fried.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary text-white">
+                <div class="d-flex justify-content-between px-4 ">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">MURG -E- AFGHAN</h5>
+                    <p class="small mb-0 true">With Bone Fresh Chicken Roasted In Tandoor With Cashew nuts Paste & Amul cream
+                      MURG PAHADI</p>
+                    <div class="text-end"><strong class="price-formatted">300 / 550/-</strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/vegetables.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MURG PAHADI TIKKA</h5>
+                    <p class="small mb-0 text-gray-600">Boneless Chicken Marinated With Mint and Coriander Paste Finished In Tandoor</p>
+                    <div class="text-end"><strong class="price-formatted">360</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Murg_Banjara1.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MURG ACHARI TIKKA</h5>
+                    <p class="small mb-0 text-gray-600">Boneless Chicken Marinated With Tandoori Achari Masala and Finished In Clay Oven</p>
+                    <div class="text-end"><strong class="price-formatted">360</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Bhati_Da_Murg.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MURG JALWA</h5>
+                    <p class="small mb-0 text-gray-600">Boneless Chicken Marinated With Tandoori Red Masala and Stuffed with Cheese</p>
+                    <div class="text-end"><strong class="price-formatted">400</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Murg_-E-Afghan.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MURG KALI MIRCH</h5>
+                    <p class="small mb-0 text-gray-600">Boneless Chicken Cooked With Tandoori Masala & Black Paper</p>
+                    <div class="text-end"><strong class="price-formatted">360</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Bhati_Da_Murg.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MURG KASOORI TIKKA</h5>
+                    <p class="small mb-0 text-gray-600">Boneless Chicken Marinated With Tandoori Red Masala & Kasoori Methi Finished In Clay Oven</p>
+                    <div class="text-end"><strong class="price-formatted">360</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Achari tikka Plate.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MURG LASUNI TIKKA</h5>
+                    <p class="small mb-0 text-gray-600">Boneless Chicken Roasted With Tandoori Special Yellow Masala With Strong Garlic Flavour</p>
+                    <div class="text-end"><strong class="price-formatted">370</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Murg_Jalwa.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="TANDOOR-SEA" role="tabpanel" aria-labelledby="TANDOOR-SEA-tab">
+          <div class="row">
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary text-white">
+                <div class="d-flex justify-content-between px-4 border border-white border-2">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">FISH TIKKA</h5>
+                    <p class="small mb-0 true">Fish Marinated With Red Tandoori Masala Serve With Masala Onion</p>
+                    <div class="text-end"><strong class="price-formatted">460</strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu murgh_zafrani_shorba.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">ACHARI FISH TIKKA</h5>
+                    <p class="small mb-0 text-gray-600">Boneless Fish Cooked With Tandoori Achari Masala.</p>
+                    <div class="text-end"><strong class="price-formatted">480</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Murg_Banjara1.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">AJWAINI FISH TIKKA</h5>
+                    <p class="small mb-0 text-gray-600">Boneless Fish Marinated In Red Chilly Paste, Spices and Topped With Carom Seeds, Grilled In Tandoor</p>
+                    <div class="text-end"><strong class="price-formatted">480</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Murg_Jalwa.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">FISH AMRITSARI</h5>
+                    <p class="small mb-0 text-gray-600">Marinated With Punjabi Homemade Masala,Deep Fried</p>
+                    <div class="text-end"><strong class="price-formatted">2000</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Murg_Banjara1.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">TAWA SURMAI</h5>
+                    <p class="small mb-0 text-gray-600">Surmai Fish Marinated With Indian Spices & Herbs Cooked On Pan</p>
+                    <div class="text-end"><strong class="price-formatted">2000</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Kalami_Kabab.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">FISH TIKKA MASALA</h5>
+                    <p class="small mb-0 text-gray-600">Charcoal Grilled Fish Tikka In Our Special Masala Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">450/540</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/amrotsari_soya_chaap1.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">LEMON FISH CURRY</h5>
+                    <p class="small mb-0 text-gray-600">DBasa Fish Cooked In Lemon, Coriander & Tomatoes Based Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">450/540</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Daal_Fry-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KADAI JHINGA</h5>
+                    <p class="small mb-0 text-gray-600">Fresh Prawn Cooked With Sautéed capsicum & Onion S</p>
+                    <div class="text-end"><strong class="price-formatted">560/-</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Daal_Fry-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        <div class="tab-pane fade" id="CHICKEN" role="tabpanel" aria-labelledby="CHICKEN-tab">
+          <div class="row">
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">METHI MATAR MALAI</h5>
+                    <p class="small mb-0 text-gray-600">Peas Cooked In White Gravy With Fenugreek, Cream And Bu􀆩er</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Jalwa.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KHUMB MATAR MASALA</h5>
+                    <p class="small mb-0 text-gray-600">Mushroom Cooked With Peas And Mild Spices.</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/kadai_paneer-removebg-preview (1).png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary text-white">
+                <div class="d-flex justify-content-between px-4 border border-white border-2">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">TAWA KHUMB</h5>
+                    <p class="small mb-0 true">Cubes Of Mushroom, Onion, Tomato, Capsicum, Green Chilli, Coriander Seeds With
+                      Tangy Tomato Onion Masala.</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/menu Bhutte-ka-shorba-3-2-removebg-preview.png" alt="Paneer Chili"
+                      class="rounded-circle" style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KHUMB KADAI</h5>
+                    <p class="small mb-0 text-gray-600">Mushroom Cooked In Thick Onion & Tomatoes Based Gravy S</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Palak Shorba.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KHUMB DO PYAZA</h5>
+                    <p class="small mb-0 text-gray-600">Fresh Bu􀆩on Mushroom Cooked With Dice Onion, Tomato and Cashew Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">330</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer_Makhani-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">PALAK KOFTA</h5>
+                    <p class="small mb-0 text-gray-600">Co􀆩age Cheese Balls Cooked In Spinach Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer-Mumtaz-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MALAI KOFTA</h5>
+                    <p class="small mb-0 text-gray-600">Co􀆩age Cheese Balls In Yellow Creamy Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">310</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Tikka.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">SUBZ KOFTA CURRY</h5>
+                    <p class="small mb-0 text-gray-600">Vegetables Balls Cooked In Tomato & Onion Based Gravy.</p>
+                    <div class="text-end"><strong class="price-formatted">310</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Methi Matar Malai.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">SUBZ KADAI</h5>
+                    <p class="small mb-0 text-gray-600">Mixed Vegetables Cooked with Coriander Seeds & Red Gravy
+                      Flavoured With Bu􀆩er And Cream</p>
+                    <div class="text-end"><strong class="price-formatted">310</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">JEERA ALOO</h5>
+                    <p class="small mb-0 text-gray-600">Potato Cooked With Flavoured Fenugreek S</p>
+                    <div class="text-end"><strong class="price-formatted">230</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KASHMIRI DUM ALOO</h5>
+                    <p class="small mb-0 text-gray-600">A Delicious Dish Of Stuffed Potatoes Cooked In A Spicy Gravy.
+                      KASOORI GOBHI</p>
+                    <div class="text-end"><strong class="price-formatted">290</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">SARSO DA SAAG (SEASONAL)</h5>
+                    <p class="small mb-0 text-gray-600">Mustard Leaves Paste Cooked With Green Chillies, Onion, Tomato,
+                      Base Prepa</p>
+                    <div class="text-end"><strong class="price-formatted">300</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="BREAD" role="tabpanel" aria-labelledby="BREAD-tab">
+          <div class="row">
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">TANDOORI ROTI</h5>
+                    <div class="text-end"><strong class="price-formatted">30</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Jalwa.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">TANDOORI BUTTER ROTI</h5>
+                    <div class="text-end"><strong class="price-formatted">40</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/kadai_paneer-removebg-preview (1).png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary text-white">
+                <div class="d-flex justify-content-between px-4 border border-white border-2">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">PLAIN NAAN / BUTTER NAAN</h5>
+                    
+                    <div class="text-end"><strong class="price-formatted">60/70</strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/menu Bhutte-ka-shorba-3-2-removebg-preview.png" alt="Paneer Chili"
+                      class="rounded-circle" style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">LACHHA PARANTHA</h5>
+                    <div class="text-end"><strong class="price-formatted">60</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Palak Shorba.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">GARLIC BUTTER NAAN</h5>
+                    <div class="text-end"><strong class="price-formatted">110/-</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer_Makhani-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">PANEER NAAN</h5>
+                    <div class="text-end"><strong class="price-formatted">150/-</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer-Mumtaz-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">CHEESE GARLIC NAAN</h5>
+                    <div class="text-end"><strong class="price-formatted">180/-</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Tikka.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KEEMA NAAN</h5>
+                    <div class="text-end"><strong class="price-formatted">220</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Methi Matar Malai.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MISSI ROTI</h5>
+                    
+                    <div class="text-end"><strong class="price-formatted">60</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KHASTA ROTI</h5>
+                    <div class="text-end"><strong class="price-formatted">60</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MAKKI DI ROTI</h5>
+                    
+                    <div class="text-end"><strong class="price-formatted">70</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="tab-pane fade" id="RICE" role="tabpanel" aria-labelledby="RICE-tab">
+          <div class="row">
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">STEAM RICE</h5>
+                    <p class="small mb-0 text-gray-600">Peas Cooked In White Gravy With Fenugreek, Cream And Bu􀆩er</p>
+                    <div class="text-end"><strong class="price-formatted">170</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Jalwa.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">JEERA RICE</h5>
+                    <p class="small mb-0 text-gray-600">Mushroom Cooked With Peas And Mild Spices.</p>
+                    <div class="text-end"><strong class="price-formatted">210</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/kadai_paneer-removebg-preview (1).png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary text-white">
+                <div class="d-flex justify-content-between px-4 border border-white border-2">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">VEG PALAO</h5>
+                    <p class="small mb-0 true">Cubes Of Mushroom, Onion, Tomato, Capsicum, Green Chilli, Coriander Seeds With
+                      Tangy Tomato Onion Masala.</p>
+                    <div class="text-end"><strong class="price-formatted">240</strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/menu Bhutte-ka-shorba-3-2-removebg-preview.png" alt="Paneer Chili"
+                      class="rounded-circle" style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">VEG BIRYANI</h5>
+                    <p class="small mb-0 text-gray-600">Yellow Rice Blended With Mixed Vegetables</p>
+                    <div class="text-end"><strong class="price-formatted">260</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Palak Shorba.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">ANDA BIRYANI</h5>
+                    <p class="small mb-0 text-gray-600">Aroma </p>
+                    <div class="text-end"><strong class="price-formatted">260</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer_Makhani-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MURG DUM BIRYANI</h5>
+                    <p class="small mb-0 text-gray-600">Marinated Chicken Cooked Along With Secret Spices And Basma</p>
+                    <div class="text-end"><strong class="price-formatted">380</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer-Mumtaz-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MUTTON DUM BIRYANI</h5>
+                    <p class="small mb-0 text-gray-600">Marinated Chicken Cooked Along With Secret Spices And Basma</p>
+                    <div class="text-end"><strong class="price-formatted">500</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Tikka.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">SUBZ KOFTA CURRY</h5>
+                    <p class="small mb-0 text-gray-600">Vegetables Balls Cooked In Tomato & Onion Based Gravy.</p>
+                    <div class="text-end"><strong class="price-formatted">310</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Methi Matar Malai.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">SUBZ KADAI</h5>
+                    <p class="small mb-0 text-gray-600">Mixed Vegetables Cooked with Coriander Seeds & Red Gravy
+                      Flavoured With Bu􀆩er And Cream</p>
+                    <div class="text-end"><strong class="price-formatted">310</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">JEERA ALOO</h5>
+                    <p class="small mb-0 text-gray-600">Potato Cooked With Flavoured Fenugreek S</p>
+                    <div class="text-end"><strong class="price-formatted">230</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KASHMIRI DUM ALOO</h5>
+                    <p class="small mb-0 text-gray-600">A Delicious Dish Of Stuffed Potatoes Cooked In A Spicy Gravy.
+                      KASOORI GOBHI</p>
+                    <div class="text-end"><strong class="price-formatted">290</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">SARSO DA SAAG (SEASONAL)</h5>
+                    <p class="small mb-0 text-gray-600">Mustard Leaves Paste Cooked With Green Chillies, Onion, Tomato,
+                      Base Prepa</p>
+                    <div class="text-end"><strong class="price-formatted">300</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+          <div class="row">
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">METHI MATAR MALAI</h5>
+                    <p class="small mb-0 text-gray-600">Peas Cooked In White Gravy With Fenugreek, Cream And Bu􀆩er</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Jalwa.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KHUMB MATAR MASALA</h5>
+                    <p class="small mb-0 text-gray-600">Mushroom Cooked With Peas And Mild Spices.</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/kadai_paneer-removebg-preview (1).png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="p-1 bg-primary text-white">
+                <div class="d-flex justify-content-between px-4 border border-white border-2">
+                  <div class="me-3 true">
+                    <h5 class="fw-light">TAWA KHUMB</h5>
+                    <p class="small mb-0 true">Cubes Of Mushroom, Onion, Tomato, Capsicum, Green Chilli, Coriander Seeds With
+                      Tangy Tomato Onion Masala.</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                      <p class="text-uppercase small mb-0">Recommended</p>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/menu Bhutte-ka-shorba-3-2-removebg-preview.png" alt="Paneer Chili"
+                      class="rounded-circle" style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KHUMB KADAI</h5>
+                    <p class="small mb-0 text-gray-600">Mushroom Cooked In Thick Onion & Tomatoes Based Gravy S</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Palak Shorba.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KHUMB DO PYAZA</h5>
+                    <p class="small mb-0 text-gray-600">Fresh Bu􀆩on Mushroom Cooked With Dice Onion, Tomato and Cashew Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">330</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer_Makhani-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">PALAK KOFTA</h5>
+                    <p class="small mb-0 text-gray-600">Co􀆩age Cheese Balls Cooked In Spinach Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">340</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Paneer-Mumtaz-removebg-preview.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">MALAI KOFTA</h5>
+                    <p class="small mb-0 text-gray-600">Co􀆩age Cheese Balls In Yellow Creamy Gravy</p>
+                    <div class="text-end"><strong class="price-formatted">310</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Menu Paneer Tikka.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">SUBZ KOFTA CURRY</h5>
+                    <p class="small mb-0 text-gray-600">Vegetables Balls Cooked In Tomato & Onion Based Gravy.</p>
+                    <div class="text-end"><strong class="price-formatted">310</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Methi Matar Malai.png" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">SUBZ KADAI</h5>
+                    <p class="small mb-0 text-gray-600">Mixed Vegetables Cooked with Coriander Seeds & Red Gravy
+                      Flavoured With Bu􀆩er And Cream</p>
+                    <div class="text-end"><strong class="price-formatted">310</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">JEERA ALOO</h5>
+                    <p class="small mb-0 text-gray-600">Potato Cooked With Flavoured Fenugreek S</p>
+                    <div class="text-end"><strong class="price-formatted">230</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">KASHMIRI DUM ALOO</h5>
+                    <p class="small mb-0 text-gray-600">A Delicious Dish Of Stuffed Potatoes Cooked In A Spicy Gravy.
+                      KASOORI GOBHI</p>
+                    <div class="text-end"><strong class="price-formatted">290</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 model">
+              <div class="py-4 border-bottom">
+                <div class="d-flex justify-content-between px-4">
+                  <div class="me-3 py-1">
+                    <h5 class="fw-light">SARSO DA SAAG (SEASONAL)</h5>
+                    <p class="small mb-0 text-gray-600">Mustard Leaves Paste Cooked With Green Chillies, Onion, Tomato,
+                      Base Prepa</p>
+                    <div class="text-end"><strong class="price-formatted">300</strong>
+                    </div>
+                  </div>
+                  <div class="text-end true" style="margin-right: 0px;">
+                    <img src="./img/Khumb Matar Masala.jpg" alt="Paneer Chili" class="rounded-circle"
+                      style="width: 160px; height: 120px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 justify-content-center" style="margin: auto;">
+      <a href="./videos/A4 NEW_compressed_2.pdf" download class="btn btn-primary">Download Menu</a>
+    </div>
+
+  </section>
+  ->
+  <!-- Gallery Section-->
+  <section id="gallery" class="OurGallery">
+    <div class="container text-center" style="margin: auto;">
+      <header class="mb-5">
+        <h2 class="handwriting-text">Our Gallery</h2>
+        <h5 class="text-uppercase text-gray-500 fw-normal">Discover the photo gallery</h5>
+      </header>
+      <div class="row g-0">
+        <!-- Item-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="overlay-hover-primary"><img class="img-fluid" src="img/bg01.jpg" alt="image">
+            <div class="overlay-content p-1"><a
+                class="glightbox d-block border border-2 border-white w-100 h-100 d-flex align-items-center justify-content-center text-white text-decoration-none"
+                href="img/bg01.jpg" data-gallery="gallery" data-glightbox="Image Caption">
+                <div class="icon icon-md border border-white"><i class="fas fa-search fa-2x text-white"></i></div>
+              </a></div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="overlay-hover-primary"><img class="img-fluid" src="img/bg02.jpg" alt="image">
+            <div class="overlay-content p-1"><a
+                class="glightbox d-block border border-2 border-white w-100 h-100 d-flex align-items-center justify-content-center text-white text-decoration-none"
+                href="img/bg02.jpg" data-gallery="gallery" data-glightbox="Image Caption">
+                <div class="icon icon-md border border-white"><i class="fas fa-search fa-2x text-white"></i></div>
+              </a></div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="overlay-hover-primary"><img class="img-fluid" src="img/bg03.jpg" alt="image">
+            <div class="overlay-content p-1"><a
+                class="glightbox d-block border border-2 border-white w-100 h-100 d-flex align-items-center justify-content-center text-white text-decoration-none"
+                href="img/bg03.jpg" data-gallery="gallery" data-glightbox="Image Caption">
+                <div class="icon icon-md border border-white"><i class="fas fa-search fa-2x text-white"></i></div>
+              </a></div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="overlay-hover-primary"><img class="img-fluid" src="img/bg04.jpg" alt="image">
+            <div class="overlay-content p-1"><a
+                class="glightbox d-block border border-2 border-white w-100 h-100 d-flex align-items-center justify-content-center text-white text-decoration-none"
+                href="img/bg04.jpg" data-gallery="gallery" data-glightbox="Image Caption">
+                <div class="icon icon-md border border-white"><i class="fas fa-search fa-2x text-white"></i></div>
+              </a></div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="overlay-hover-primary"><img class="img-fluid" src="img/bg05.jpg" alt="image">
+            <div class="overlay-content p-1"><a
+                class="glightbox d-block border border-2 border-white w-100 h-100 d-flex align-items-center justify-content-center text-white text-decoration-none"
+                href="img/bg05.jpg" data-gallery="gallery" data-glightbox="Image Caption">
+                <div class="icon icon-md border border-white"><i class="fas fa-search fa-2x text-white"></i></div>
+              </a></div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="overlay-hover-primary"><img class="img-fluid" src="img/bg06.jpg" alt="image">
+            <div class="overlay-content p-1"><a
+                class="glightbox d-block border border-2 border-white w-100 h-100 d-flex align-items-center justify-content-center text-white text-decoration-none"
+                href="img/bg06.jpg" data-gallery="gallery" data-glightbox="Image Caption">
+                <div class="icon icon-md border border-white"><i class="fas fa-search fa-2x text-white"></i></div>
+              </a></div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="overlay-hover-primary"><img class="img-fluid" src="img/bg04.jpg" alt="image">
+            <div class="overlay-content p-1"><a
+                class="glightbox d-block border border-2 border-white w-100 h-100 d-flex align-items-center justify-content-center text-white text-decoration-none"
+                href="img/bg04.jpg" data-gallery="gallery" data-glightbox="Image Caption">
+                <div class="icon icon-md border border-white"><i class="fas fa-search fa-2x text-white"></i></div>
+              </a></div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="overlay-hover-primary"><img class="img-fluid" src="img/bg07.jpg" alt="image">
+            <div class="overlay-content p-1"><a
+                class="glightbox d-block border border-2 border-white w-100 h-100 d-flex align-items-center justify-content-center text-white text-decoration-none"
+                href="img/bg07.jpg" data-gallery="gallery" data-glightbox="Image Caption">
+                <div class="icon icon-md border border-white"><i class="fas fa-search fa-2x text-white"></i></div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Gallery Section-->
+ 
+  <!-- Booking Section-->
+  <section class="bg-light" id="booking">
+    <div class="container" style="margin: auto;">
+      <header class="text-center mb-5">
+        <h2 class="handwriting-text">Order your table</h2>
+        <h5 class="text-uppercase text-gray-500 fw-normal">Enjoy your meal at our restaurant</h5>
+      </header>
+      <div class="row">
+        <div class="col-lg-10 mx-auto position-relative"><img
+            class="position-absolute top-100 start-100 translate-middle d-none d-lg-block" src="img/vegetables.png"
+            alt="..." width="300">
+          <div class="bg-white z-index-20 position-relative">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="card border-0 py-5">
+                  <!-- <div class="ribbon">
+                    <div class="icon icon-sm border-0 bg-primary rounded-0 text-white"><i
+                        class="fas fa-star text-white"></i></div>
+                  </div> -->
+                  <div class="card-body pt-5">
+                    <header class="mb-5 text-center">
+                      <h3 class="handwriting-text">Make a reservation</h3>
+                      <h5 class="text-uppercase text-gray-500 fw-normal">Book your table now</h5>
+                    </header>
+                    <form>
+                      <div class="row gy-3">
+                        <div class="col-lg-6">
+                          <label class="form-label" for="resName"> Name</label>
+                          <input class="form-control shadow-0 px-0 border-0 " id="resName" type="text"
+                            name="res_name" required="">
+                        </div>
+                        <div class="col-lg-6">
+                          <label class="form-label" for="resEmail"> Email</label>
+                          <input class="form-control shadow-0 px-0 border-0 " id="resEmail" type="email"
+                            name="res_email" required="">
+                        </div>
+                        <div class="col-lg-6">
+                          <label class="form-label" for="resNumber"> Number</label>
+                          <input class="form-control shadow-0 px-0 border-0 " id="resNumber" type="text"
+                            name="res_number" required="">
+                        </div>
+                        <div class="col-lg-6">
+                          <label class="form-label" for="resPeople">People</label>
+                          <select class="form-select shadow-0 px-0 border-0" id="resPeople" name="res_people" required="">
+                              <option value="" disabled selected>Select number of people</option>
+                              <option value="1">1 person</option>
+                              <option value="2">2 people</option>
+                              <option value="3">3 people</option>
+                              <option value="4">4 people</option>
+                              <option value="5">5 people</option>
+                          </select>
+                      </div>
+                      
+                      <div class="col-lg-12">
+                        <label class="form-label" for="modalResDate">Date & Time</label>
+                        <input class="form-control shadow-0 px-0 border-0" id="modalResDate" type="datetime-local" name="res_date"
+                               required="" min="{{ currentDateTime() }}">
+                    </div>
+                    
+                        <div class="col-lg-12">
+                          <label class="form-label" for="request"> Special request</label>
+                          <textarea class="form-control shadow-0 px-0 border-0 " id="request" rows="3"
+                            name="res_request" required=""></textarea>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                          <button class="btn btn-primary" type="submit">Book now</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Booking Section-->
+  </section>
+
+  <!-- Contact Section-->
+  <section id="contact">
+    <div class="position-absolute top-0 start-0 end-0 bottom-0" id="map" ></div>
+    <div class="container z-index-top" style="margin: auto;">
+      <div class="card shadow border-0">
+        <div class="card-body p-lg-5">
+          <header class="text-center mb-5">
+            <h2 class="handwriting-text">Contact Us</h2>
+            <h5 class="text-uppercase text-gray-500 fw-normal">Feel free to contact us</h5>
+          </header>
+          <div class="row">
+            <div class="col-lg-7 mx-auto">
+              <form>
+                <div class="row gy-4">
+                  <div class="col-lg-6">
+                    <label class="form-label" for="name"> Name</label>
+                    <input class="form-control shadow-0 px-0 border-0 " id="name" type="text" name="name"
+                      required="">
+                  </div>
+                  <div class="col-lg-6">
+                    <label class="form-label" for="email"> Email</label>
+                    <input class="form-control shadow-0 px-0 border-0 " id="email" type="email"
+                      name="email" required="">
+                  </div>
+                  <div class="col-lg-12">
+                    <label class="form-label" for="message"> Your message</label>
+                    <textarea class="form-control shadow-0 px-0 border-0" id="message" rows="3"
+                      name="message" required=""></textarea>
+                  </div>
+                  <div class="col-lg-12 text-center">
+                    <button class="btn btn-primary" type="submit">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section-->
+  <button class="btn btn-primary" id="scrollTopBtn" type="button"><i class="fas fa-angle-up text-white"></i></button>
+  <!-- Footer-->
+  <footer class="footer text-gray-700">
+    <div class="container" style="margin: auto;">
+      <div class="row gy-4 mb-5">
+        <div class="col-md-4"><img class="mb-4" src="./img/REGION PUNJAB PNG.png" alt="reg " width="300" height="250px" style="margin-bottom: 0px;/* padding-top: 0px; */margin-top: -91px;margin-right: 16%;padding-top: 38px;">
+          <p class="text-sm">Welcome to Region Punjab, where we take you on a culinary journey through the heart of Punjab. Our restaurant is more than just a place to eat; it's an experience that encapsulates the rich culture, warm hospitality, and tantalizing flavors of traditional Punjabi cuisine. </p>
+       </div>
+        <div class="col-md-4">
+          <h6 class="h5 text-white text-uppercase mb-4 underline">Contact</h6>
+          <ul class="list-unstyled text-gray-700">
+            <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2 fa-fw"></i>Soho,R1,Ground Floor,Choki Dhani,Kharadi, Pune,Maharashtra 412207</li>
+            <li class="mb-2"><a class="text-reset" href=""><i class="fas fa-envelope text-primary me-2 fa-fw"></i>http://www.regionpunjab.com</a></li>
+            <li class="mb-2"><i class="fas fa-phone text-primary me-2 fa-fw"></i>9960659913</li>
+            <li><i class="fas fa-fax text-primary me-2 fa-fw"></i>Closes 12:00 am</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="h5 text-white text-uppercase mb-4 underline">Up coming events</h6>
+            <p class="text-sm mb-3">Beyond being a culinary destination, Region Punjab is also a place where moments become memories. Whether you're celebrating a birthday, anniversary, or any special occasion or Indian Fesitvals, our cozy ambiance and impeccable service make your event truly unforgettable.Join us Ganesh Chaturthi with Special Offers!.</p>
+            <form id="subscribe">
+            <div class="input-group">
+              <input class="form-control" type="email" name="email" placeholder="Enter Your Email Address">
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <ul class="social list-inline text-center mb-0 text-white">
+        <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Facebook"><i
+              class="fab fa-facebook-f"></i></a></li>
+        <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Twitter"><i
+              class="fab fa-twitter"></i></a></li>
+        <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Instagram"><i
+              class="fab fa-instagram"></i></a></li>
+        <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Pinterest"><i
+              class="fab fa-pinterest"></i></a></li>
+        <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Skype"><i
+              class="fab fa-skype"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="copyrights py-4 text-gray-700">
+    <div class="container">
+      <div class="row gy-3 text-center">
+        <div class="col-md-5 text-lg-start">
+          <ul class="list-inline mb-0 small">
+            <li class="list-inline-item"><a class="text-reset" href="#!">Policy Privacy</a></li>
+            <li class="list-inline-item"><a class="text-reset" href="#!">Terms of Use</a></li>
+            <li class="list-inline-item"><a class="text-reset" href="#!">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-7 text-lg-end">
+          <p class="mb-0 small">© 2022, Region Punjab . All Rights Reserved <a href="https://www.opticalarc.com/"
+              target="_blank">Optical Arc</a></p>
+          <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstrapious.com. It is part of the license conditions. Thanks for understanding :)-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer-->
+  <!-- JavaScript files-->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.js"></script>
+  <script src="vendor/air-datepicker/air-datepicker.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/theme.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <script defer>
+    // Initialize Swiper
+    console.log('dfgdfgfg')
+
+    var mySwiper = new Swiper(".dishes-slider-my", {
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    });
+
+    function currentDateTime() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    return `${year}-${month}-${day}T${hours}:${minutes}`;
+}
+
+  </script>
+</body>
+
+</html>
